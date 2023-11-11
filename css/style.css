@@ -1,0 +1,57 @@
+ /* =================== common css part start ===================== */ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------- common css part end ---------------------- */
+.menu{
+    width: 100%;
+    height: 50px;
+    background: #001B79;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+   
+}
+.menu ul li a{
+    font-size: 20;
+    font-weight: 700;
+    color: white;
+}
+.menu ul li {
+    position: relative;
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+
+}
+.menu ul li ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #001B79;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.menu ul li ul li a:hover{
+    background: red;
+    transform: scale(1.1);
+}
